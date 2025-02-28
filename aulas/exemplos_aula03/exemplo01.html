@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="alert alert-primary" role="alert">
+                <h3>AULA 03 - SW-I - TRABALHANDO COM FORMULÁRIOS HTML E PHP</h3>
+                <p>Aula sobre o uso de formulários HTML para o envio de dados para uma página PHP. Uso dos métodos GET e POST</p>
+            </div>
+        </div>
+        <div class="row">
+            <fieldset class="border rounded-6 p-3">
+                <legend class="float-none w-auto px-3 fw-bold">CADASTRO DE NOMES</legend>
+                <form action="processa01.php" method="POST">                
+                    <div class="mb-3">
+                        <label class="form-label">Digite seu nome:</label>
+                        <input type="text" class="form-control" name="cxnome" id="">
+                    </div>       
+                    <input class="btn btn-primary" type="submit" value="ENVIAR">                
+                </form>
+            </fieldset>
+        </div>      
+    </div>      
+</body>
+</html>
