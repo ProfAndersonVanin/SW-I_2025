@@ -10,13 +10,45 @@
 </head>
 
 <body>
-    <?php
-        include 'menu.php';
-    ?>
+    <div class="container">
+        <?php
+            include 'menu.php';
+        ?>
 
 
-    <div class="alert alert-danger" role="alert">
-        <h1>PAGINA TRES</h1>
+        <div class="alert alert-danger" role="alert">
+            <h1>PAGINA TRES - MODAL COM BOOTSTRAP</h1>
+        </div>
+
+
+        <!-- Botão que dispara o Modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Chama um Modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Isso é uma notificação para o usuário</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Aqui vai aparecer a sua mensagem para o usuário</p>
+                        <p>Cada botão executa uma ação diferente (<b>pode chamar um script php diferente</b>)</p>
+                        <div class="spinner-border text-danger" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
     </div>
 
 
