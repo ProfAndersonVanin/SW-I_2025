@@ -7,8 +7,8 @@
 </head>
 <body>
     <form action="processa_login.php" method="POST">
-        email: <input type="text" name="email" id=""><br>
-        senha: <input type="text" name="senha" id=""><br>
+        email: <input type="email" name="email" id=""><br>
+        senha: <input type="password" name="senha" id=""><br>
         <input type="submit" value="LOGAR">
     </form>
 </body>

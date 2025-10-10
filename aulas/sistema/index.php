@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PÁGINA INICIAL</title>
 </head>
 <body>
     <h1>BEM VINDO</h1>
-    <a href="login.php">LOGAR</a>
+    <button>
+        <a href="login.php">LOGAR</a>
+    </button>    
 </body>
 </html>
