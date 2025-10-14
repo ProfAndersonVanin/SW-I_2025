@@ -4,6 +4,8 @@
     
     $email = $_POST['email'];
     $senha = $_POST['senha'];
+
+    $senha = md5($senha);
     
     $consulta = "SELECT * FROM usuarios WHERE email = :email AND senha = :senha";
     
@@ -25,14 +27,15 @@
     //var_dump($resultado);
     
     
-    if($registros == 1){
+    if($registros == 0){
+        //echo "VOCÊ NÃO TEM PERMISSÃO";
+        header('Location: index.php');
+        
+    }else{        
         $_SESSION['id'] = $resultado['id'];
         $_SESSION['nome'] = $resultado['nome'];
         $_SESSION['email'] = $resultado['email'];
         header('Location: restrita.php');
         //echo "ACESSO PERMITIDO PARA A RESTRITA.PHP";
-    }else{        
-        //echo "VOCÊ NÃO TEM PERMISSÃO";
-        header('Location: index.php');
     }
 ?>
